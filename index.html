@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Competition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-screen" class="quiz-container">
+        <h2>Welcome to the Quiz!</h2>
+        <label for="username" style="color: rgb(52, 52, 52);">Enter your name:</label>
+        <input type="text" id="username" placeholder="e.g., Alex Johnson">
+        <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <div id="quiz-screen" class="quiz-container" style="display:none;">
+        <h2 id="question-text">Question will appear here</h2>
+        <div id="options"></div>
+        <button onclick="submitAnswer()">Submit Answer</button>
+    </div>
+
+    <div id="round-summary-screen" class="quiz-container" style="display:none;">
+        <h2>Round 1 Complete!</h2>
+        <p id="round-summary-text"></p>
+        <button onclick="startRound2()">Next</button>
+    </div>
+
+    <div id="result-screen" class="quiz-container" style="display:none;">
+        <h2>Quiz Complete!</h2>
+        <p id="result-text"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
